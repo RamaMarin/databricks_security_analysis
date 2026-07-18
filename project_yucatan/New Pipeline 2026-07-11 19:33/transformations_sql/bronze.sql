@@ -20,6 +20,7 @@ FROM STREAM(read_files(
     format => 'csv',
     header => true,
     inferSchema => true,
+    encoding => 'ISO-8859-1',
     pathGlobFilter => 'Incidencia delictiva estatal.csv'
     ));
 
@@ -47,6 +48,7 @@ FROM STREAM(read_files(
     format => 'csv',
     header => true,
     inferSchema => true,
+    encoding => 'ISO-8859-1',
     pathGlobFilter => 'Incidencia delictiva municipal.csv'
     ));
 
@@ -74,6 +76,7 @@ FROM STREAM(read_files(
     format => 'csv',
     header => true,
     inferSchema => true,
+    encoding => 'ISO-8859-1',
     pathGlobFilter => 'Víctimas del fuero común.csv'
     ));
 
@@ -101,6 +104,7 @@ FROM STREAM(read_files(
     format => 'csv',
     header => true,
     inferSchema => true,
+    encoding => 'ISO-8859-1',
     pathGlobFilter => 'data_pesca_ilegal.csv'
     ));
 
@@ -128,5 +132,6 @@ FROM STREAM(read_files(
     format => 'csv',
     header => true,
     inferSchema => true,
+    encoding => 'ISO-8859-1',
     pathGlobFilter => 'INM_estatal_dic25.csv'
     ));
